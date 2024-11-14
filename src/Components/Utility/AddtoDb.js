@@ -25,4 +25,4 @@ const addToStoredReadlist=(id)=>{
 
 }
 
-export {addToStoredReadlist}
+export {addToStoredReadlist, getStoredReadList}

@@ -12,6 +12,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import ListedBooks from './Components/ListedBook/ListedBooks';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
         element: <BookDetail></BookDetail>,
         loader: ()=> fetch("/booksData.json")
         
+      },
+      {
+        path: "listedBooks",
+        element: <ListedBooks></ListedBooks>,
+        loader: ()=> fetch("/booksData.json")
       },
       {
         path:"dashboard",
